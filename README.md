@@ -7,3 +7,6 @@ I use Nasa's "where the iss" API and "Leaflet.js" for the map.
 ### What I have learned
           1. Leaflet.js : Javascript map libery
           2. Show fetched data from API every second with setInterval() method
+          
+### Test the web here
+          https://thutazaw2603.github.io/ISS-tracking-map/
