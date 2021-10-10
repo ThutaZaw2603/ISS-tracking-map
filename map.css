@@ -1,0 +1,105 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+
+*{
+    font-family: 'Poppins';
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+body{
+    background-color: #f8f2f6;
+    background-image: url('background1.png');
+    color:white;
+}
+
+h1{
+    text-align: center;
+    padding:30px;
+    margin-bottom: 20px;
+}
+.mainWrapper{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 10px;
+    padding: 20px;
+    margin:0 40px;
+    min-height: 70vh;
+
+    
+   
+}
+
+#issMap{
+    height: 400px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    border:2px solid white
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    margin-left: 40px;
+
+}
+
+.info div{
+    padding:20px;
+    color:RGB(171, 212, 224);
+    
+}
+
+.info p{
+    font-size: 30px;
+}
+
+#lat,#lon,#time{
+    background:RGB(40, 40, 40);
+    padding: 7px;
+    border-radius: 5px;
+    border:1px solid white;
+    color:white;
+}
+
+.about{
+    display: flex;
+    flex:wrap;
+    margin-top: 10px;
+    padding:20px;
+}
+.about div{
+    margin:auto;
+}
+.about p{
+    text-align: center;
+}
+.about h1{
+    padding:0;
+}
+
+@media only screen and (max-width:768px){
+    .mainWrapper{
+        grid-template-columns: 1fr;
+        
+        margin:0;
+       
+    }
+    .info div{
+        padding:10px;
+    }
+    .info{
+        margin-left: 20px;
+    }
+    .about{
+        margin-top: -10px 0 10px 0;
+    }
+   
+}

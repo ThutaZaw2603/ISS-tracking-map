@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trace the international setallite</title>
+    <!--Map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+
+    <link rel="stylesheet" href="map.css">
+
+</head>
+<body>
+<h1>International Space Station Tracking Map</h1>
+<div class="mainWrapper">
+    
+    <div id="issMap">
+        <!--Map here-->
+    </div>
+    <div class="info">
+        <p>Location</p>
+        <div>
+            latitude :
+            <span id="lat">
+                
+            </span>
+        </div>
+        <div>
+            longitude:
+        <span id="lon">
+
+        </span>
+
+        </div>
+        <div>
+            time : <span id="time">2</span>
+        </div>
+        
+        
+    </div>
+</div>
+<div class="about">
+    <div>
+        <h1>About</h1>
+        <p>
+        This map is tracking the position of ISS(international space setallite) at every 1 second.<br/>
+        I use Nasa's "where the iss" API and "Leaflet.js" for the map.
+        </p>
+    </div>
+</div>
+
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+    <script src="index.js"></script>
+</body>
+</html>
